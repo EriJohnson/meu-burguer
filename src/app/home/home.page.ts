@@ -1,5 +1,4 @@
 import { Component} from '@angular/core';
-import { NavController } from '@ionic/angular';
 import { PedidoPage } from '../pedido/pedido.page';
 
 @Component({
@@ -10,12 +9,8 @@ import { PedidoPage } from '../pedido/pedido.page';
 
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor() {
 
-  }
-
-  fazerPedido(){
-    this.navCtrl.push(PedidoPage);
   }
 
 }
