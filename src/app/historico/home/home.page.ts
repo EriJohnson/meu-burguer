@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { PedidoPage } from '../pedido/pedido.page';
+import { PedidoPage } from '../../pedido/pedido.page';
 
 @Component({
   selector: 'app-home',

@@ -1,5 +1,17 @@
 <ion-content color = 'primary' padding>
 
+  <ion-card color='secondary' *ngFor="let p of pedidos">
+      <ion-card-header>
+        <ion-card-subtitle>PEDIDO: #{{p.id}}</ion-card-subtitle>
+        <ion-card-title>{{p.hamburguer}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+          <p><strong>Bebida:</strong> {{p.bebida}}</p>
+          <p><strong>Acompanhamento:</strong> {{p.acompanhamento}}</p>
+      </ion-card-content>
+    </ion-card>
+
 
   <ion-button color = 'secondary' expand="block" routerLink="/home">VOLTAR</ion-button>
 

@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pedido.page.html',
   styleUrls: ['./pedido.page.scss'],
 })
+
 export class PedidoPage implements OnInit {
 
   constructor() { }
