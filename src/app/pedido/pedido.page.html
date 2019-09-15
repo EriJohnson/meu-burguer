@@ -1,7 +1,40 @@
 <ion-content color = 'primary' padding>
 
-    <h1 color = 'secondary' class ='text-center'>FAÇA O SEU PEDIDO</h1>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Pedido</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
+    <ion-list color = 'secondary'>
+        <ion-item>
+            <ion-label>Hambúrguer</ion-label>
+                <ion-select value="hamburguer" okText="Confirmar" cancelText="Cancelar">
+                    <ion-select-option value="theamerican">The American Bacon Burguer</ion-select-option>
+                    <ion-select-option value="thecalabra">The Calabra</ion-select-option>
+                    <ion-select-option value="theclassic">The Classic Burguer</ion-select-option>
+                </ion-select>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>Bebida</ion-label>
+                <ion-select value="bebida" okText="Confirmar" cancelText="Cancelar">
+                    <ion-select-option value="limonada">Limonada</ion-select-option>
+                    <ion-select-option value="refrigerante">Refrigerante</ion-select-option>
+                    <ion-select-option value="sucodemorango">Suco de Morango</ion-select-option>
+                </ion-select>
+        </ion-item>
+
+        <ion-item>
+                <ion-label>Acompanhamento</ion-label>
+                    <ion-select value="acompanhamento" okText="Confirmar" cancelText="Cancelar">
+                        <ion-select-option value="onionrings">Onion Rings</ion-select-option>
+                        <ion-select-option value="batatafrita">Batata Frita</ion-select-option>
+                    </ion-select>
+            </ion-item>
+    </ion-list>
+
+    <ion-button color = 'secondary' expand="block" routerLink="/home">CONFIRMAR PEDIDO</ion-button>
     <ion-button color = 'secondary' expand="block" routerLink="/home">CANCELAR</ion-button>
 
 </ion-content>
