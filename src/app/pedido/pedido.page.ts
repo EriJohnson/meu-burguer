@@ -15,7 +15,7 @@ export class PedidoPage implements OnInit {
 
   constructor(public pedidoService: PedidosapiService) {
 
-   }
+  }
 
   ngOnInit() {
   }
@@ -23,7 +23,8 @@ export class PedidoPage implements OnInit {
   fazerPedido(){
     var novo = {
       hamburger : this.hamburguer,
-      valor : ''
+      bebida : this.bebida,
+      acompanhamento: this.acompanhamento
     }
 
     this.pedidoService.fazerPedido(novo)
