@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PedidosapiService } from '../pedidosapi.service';
 
 @Component({
   selector: 'app-pedido',
@@ -8,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 
 export class PedidoPage implements OnInit {
 
-  constructor() { }
+  hamburguer : string = '';
+  bebida : string = '';
+  acompanhamento : string = '';
+
+  constructor(public pedidoService: PedidosapiService) {
+
+   }
 
   ngOnInit() {
   }
+
+  fazerPedido(){
+    var novo = {
+      hamburger : this.hamburguer,
+      valor : ''
+    }
+
+    this.pedidoService.fazerPedido(novo)
+    .subscribe()
+  }
+
+  
 
 }
